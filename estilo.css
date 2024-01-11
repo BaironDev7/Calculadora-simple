@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    background-color: #48B2DC;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.calc{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #48B2DC;
+}
+.container{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    padding: 10px 20px 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05);
+}
+.container h3{
+    color: #48B2DC;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.display{
+    height: 110px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgb(61, 61, 61);
+    pointer-events: none;
+}
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+.buttons button:active{
+    transform: scale(0.99);
+}
+.operador{
+    color: #48B2DC;
+}
+footer{
+    background-color: #48B2DC;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
